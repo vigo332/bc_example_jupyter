@@ -42,5 +42,7 @@ external_url="http://$access_host:$remote_port/node/${host}/${port}"
 
 echoalert "Copy the following link in your browser for the jupyter notebook web access."
 echoinfo "$external_url"
+echo
+echoinfo "Only HTTP mode is supported. Google Chrome will enforce HTTPS so it will not work. "
 echoinfo "Please find the password in the connection.yml file in the Jupyter session directory in the Ondemand browser."
 
